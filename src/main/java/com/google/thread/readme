@@ -1,0 +1,4 @@
+线程的使用
+sleep()和wait()方法区别
+sleep()是线程类的方法，wait()Object类的方法
+java中线程的几种状态
