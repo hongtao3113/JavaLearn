@@ -26,6 +26,11 @@ public class IntegerTest {
 		System.out.println(i3 == i4);// false
 		System.out.println(i3.equals(i4));//true
 
+		Integer f1=-128,f2=-128,f3=127,f4=127,f5=128,f6=128;
+		System.out.println(f1==f2);//ture
+		System.out.println(f3==f4);//true
+		System.out.println(f5==f6);//false
+		//IntegerCache Integer缓存，-128~127
 	}
 
 }
