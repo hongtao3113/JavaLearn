@@ -8,8 +8,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * ×Ö·û´®¹¤¾ß
- * 
+ * å­—ç¬¦ä¸²å·¥å…·
+ *
  * @author wk
  *
  */
@@ -20,7 +20,7 @@ public class StringUtil {
 //		String idcard = "140211199412243319";
 //		int length = idcard.length();
 //		StringBuffer newIdCard = new StringBuffer(idcard.substring(0, length / 2));
-//		// Í¨¹ıÕıÔò±í´ïÊ½Ìæ»»×Ö·û
+//		// é€šè¿‡æ­£åˆ™è¡¨è¾¾å¼æ›¿æ¢å­—ç¬¦
 //		newIdCard.append(idcard.substring(length / 2).replaceAll(".", "*"));
 //		System.out.println(newIdCard);
 //		isContain();
@@ -34,29 +34,29 @@ public class StringUtil {
 	}
 
 	public static void isContain() {
-		String s1 = "ÖĞĞÅÒøĞĞÊ¯¼Ò×¯µÔÓª´ó½ÖÖ§ĞĞ";
-		String s2 = "Ê¯¼Ò×¯";
+		String s1 = "ä¸­ä¿¡é“¶è¡ŒçŸ³å®¶åº„ç¿Ÿè¥å¤§è¡—æ”¯è¡Œ";
+		String s2 = "çŸ³å®¶åº„";
 		System.out.println(s1.contains(s2));
 		Integer cityFlag = s1.contains(s2) ? 0 : 1;
 		System.out.println(cityFlag);
 	}
 
 	public static void replaceTest() {
-		String s = "¿Í»§ÄúºÃ£¬$[compName]£¨¹©Ó¦ÉÌ£©ÌúĞÅÈÚ×ÊÒâÏòÒÑÍÆËÍ¹óĞĞ£¬ÁªÏµÈË£º$[userName]£¬$[userMobile]¡£¡¾ºÓ¸Ö¹©Ó¦Á´Æ½Ì¨¡¿";
-		s = s.replace("$[compName]", "ºÓ¸Ö¼¯ÍÅÓĞÏŞ¹«Ë¾").replace("$[userName]", "Æİ¹ú»ª").replace("$[userMobile]", "13521201224");
+		String s = "å®¢æˆ·æ‚¨å¥½ï¼Œ$[compName]ï¼ˆä¾›åº”å•†ï¼‰é“ä¿¡èèµ„æ„å‘å·²æ¨é€è´µè¡Œï¼Œè”ç³»äººï¼š$[userName]ï¼Œ$[userMobile]ã€‚ã€æ²³é’¢ä¾›åº”é“¾å¹³å°ã€‘";
+		s = s.replace("$[compName]", "æ²³é’¢é›†å›¢æœ‰é™å…¬å¸").replace("$[userName]", "æˆšå›½å").replace("$[userMobile]", "13521201224");
 		System.out.println(s);
 	}
 
 	/**
-	 * ½ØÈ¡×Ö·û´®
+	 * æˆªå–å­—ç¬¦ä¸²
 	 */
 	public static void subStringByPattern() {
 		try {
-			/* ¶ÁÈëTXTÎÄ¼ş */
-			String pathname = "D:\\citic523.log"; // ¾ø¶ÔÂ·¾¶»òÏà¶ÔÂ·¾¶¶¼¿ÉÒÔ£¬ÕâÀïÊÇ¾ø¶ÔÂ·¾¶£¬Ğ´ÈëÎÄ¼şÊ±ÑİÊ¾Ïà¶ÔÂ·¾¶
-			File filename = new File(pathname); // Òª¶ÁÈ¡ÒÔÉÏÂ·¾¶µÄinput¡£txtÎÄ¼ş
-			InputStreamReader reader = new InputStreamReader(new FileInputStream(filename), "GBK"); // ½¨Á¢Ò»¸öÊäÈëÁ÷¶ÔÏóreader
-			BufferedReader br = new BufferedReader(reader); // ½¨Á¢Ò»¸ö¶ÔÏó£¬Ëü°ÑÎÄ¼şÄÚÈİ×ª³É¼ÆËã»úÄÜ¶Á¶®µÄÓïÑÔ
+			/* è¯»å…¥TXTæ–‡ä»¶ */
+			String pathname = "D:\\citic523.log"; // ç»å¯¹è·¯å¾„æˆ–ç›¸å¯¹è·¯å¾„éƒ½å¯ä»¥ï¼Œè¿™é‡Œæ˜¯ç»å¯¹è·¯å¾„ï¼Œå†™å…¥æ–‡ä»¶æ—¶æ¼”ç¤ºç›¸å¯¹è·¯å¾„
+			File filename = new File(pathname); // è¦è¯»å–ä»¥ä¸Šè·¯å¾„çš„inputã€‚txtæ–‡ä»¶
+			InputStreamReader reader = new InputStreamReader(new FileInputStream(filename), "GBK"); // å»ºç«‹ä¸€ä¸ªè¾“å…¥æµå¯¹è±¡reader
+			BufferedReader br = new BufferedReader(reader); // å»ºç«‹ä¸€ä¸ªå¯¹è±¡ï¼Œå®ƒæŠŠæ–‡ä»¶å†…å®¹è½¬æˆè®¡ç®—æœºèƒ½è¯»æ‡‚çš„è¯­è¨€
 			String line = "";
 			line = br.readLine();
 			if (line.contains("<action>DLSBAMAN</action>")) {
@@ -65,7 +65,7 @@ public class StringUtil {
 			}
 			System.out.println();
 			while (line != null) {
-				line = br.readLine(); // Ò»´Î¶ÁÈëÒ»ĞĞÊı¾İ
+				line = br.readLine(); // ä¸€æ¬¡è¯»å…¥ä¸€è¡Œæ•°æ®
 				if (line != null) {
 					if (line.contains("<action>DLSBAMAN</action>")) {
 						System.out.print(getStrContainData(line, "<subAccNo>", "</subAccNo>") + "    ");

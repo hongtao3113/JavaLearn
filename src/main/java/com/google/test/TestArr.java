@@ -1,8 +1,8 @@
 package com.google.test;
 
 /**
- * Êı×é³õÊ¼»¯
- * 
+ * æ•°ç»„åˆå§‹åŒ–
+ *
  * @author wk
  *
  */

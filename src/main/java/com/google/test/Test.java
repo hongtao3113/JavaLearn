@@ -11,7 +11,7 @@ public class Test {
 		Class<Test> classInfo = Test.class;
 		try {
 
-			System.out.println(classInfo.getField("s"));//只能获取public修饰的？
+			System.out.println(classInfo.getField("s"));//鍙兘鑾峰彇public淇グ鐨勶紵
 			Object object = new Object();
 
 		} catch (NoSuchFieldException e) {

@@ -6,22 +6,22 @@ import java.util.LinkedList;
 import java.util.Vector;
 
 /**
- * ArrayListºÍLinkedListµÄÇø±ğ
- * 
+ * ArrayListå’ŒLinkedListçš„åŒºåˆ«
+ *
  * @author wk
  *
  */
 @SuppressWarnings("unused")
 public class ArrayListAndLinkedList {
-	
+
 	public static void main(String[] args) {
-		//»ùÓÚÊı×é Object[] VectorÏß³Ì°²È«
+		//åŸºäºæ•°ç»„ Object[] Vectorçº¿ç¨‹å®‰å…¨
 		ArrayList<Object> arrayList = new ArrayList<>();
 		Vector<Object> vector = new Vector<>();
-		
-		//»ùÓÚÁ´±í
+
+		//åŸºäºé“¾è¡¨
 		LinkedList<Object> linkedList = new LinkedList<>();
-		//±¾ÖÊÉÏÊÇÊı×éÓëÁ´±íµÄÇø±ğ£¬ÊÇ·ñÏß³Ì°²È«
+		//æœ¬è´¨ä¸Šæ˜¯æ•°ç»„ä¸é“¾è¡¨çš„åŒºåˆ«ï¼Œæ˜¯å¦çº¿ç¨‹å®‰å…¨
 		HashMap<Object, Object> hashMap = new HashMap<>();
 	}
 

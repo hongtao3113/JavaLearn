@@ -10,9 +10,9 @@ public class ListUtil {
 		List<Integer> list = new ArrayList<>();
 		List<Integer> list2 = new ArrayList<>();
 		list2.add(2);
-		list.addAll(null);// »á±¨¿ÕÖ¸Õë
+		list.addAll(null);// ä¼šæŠ¥ç©ºæŒ‡é’ˆ
 		System.out.println(list);
-	
+
 	}
 
 }

@@ -7,18 +7,18 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * ÈÕÆÚÀà
- * 
+ * æ—¥æœŸç±»
+ *
  * @author wk
  *
  */
 public class DateUtil {
-	
+
 	static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-	
+
 	public static void main(String[] args) {
 
-		System.out.println("ÈÕÆÚ²âÊÔÀà");
+		System.out.println("æ—¥æœŸæµ‹è¯•ç±»");
 		dateConvertToString();
 		stringConvertToDate();
 		timestampConvertToDate();
@@ -28,26 +28,26 @@ public class DateUtil {
 		get();
 
 	}
-	
+
 	public static void get() {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
 		Date date = new Date();
 		System.out.println(sdf.format(date)+date.getTime());
 	}
-	
+
 	/**
-	 * ÈÕÆÚ×ª×Ö·û´®
+	 * æ—¥æœŸè½¬å­—ç¬¦ä¸²
 	 */
 	public static void dateConvertToString() {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		Date date = new Date();
-		System.out.println("ÈÕÆÚ×ª×Ö·û´®£º" + sdf.format(date));
+		System.out.println("æ—¥æœŸè½¬å­—ç¬¦ä¸²ï¼š" + sdf.format(date));
 
 	}
 
 	/**
-	 * ×Ö·û´®×ªÈÕÆÚ
+	 * å­—ç¬¦ä¸²è½¬æ—¥æœŸ
 	 */
 	public static void stringConvertToDate() {
 
@@ -56,7 +56,7 @@ public class DateUtil {
 		Date date;
 		try {
 			date = sdf.parse(s);
-			System.out.println("×Ö·û´®×ªÈÕÆÚ£º" + date);
+			System.out.println("å­—ç¬¦ä¸²è½¬æ—¥æœŸï¼š" + date);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
@@ -64,54 +64,54 @@ public class DateUtil {
 	}
 
 	/**
-	 * Ê±¼ä´Á×ªÈÕÆÚ
+	 * æ—¶é—´æˆ³è½¬æ—¥æœŸ
 	 */
 	public static void timestampConvertToDate() {
 		System.out.println();
 		// long timesTamp = new Date().getTime();
 		long timesTamp = 1546790400000L;
-		System.out.println("Ê±¼ä´Á³¤¶È£º" + (timesTamp + "").length());
+		System.out.println("æ—¶é—´æˆ³é•¿åº¦ï¼š" + (timesTamp + "").length());
 		Date date = new Date(timesTamp);
 
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		System.out.println("Ê±¼ä´Á×ªÈÕÆÚ£º" + sdf.format(date));
-		System.out.println("Ê±¼ä´Á×ªÈÕÆÚ£º" + date);
+		System.out.println("æ—¶é—´æˆ³è½¬æ—¥æœŸï¼š" + sdf.format(date));
+		System.out.println("æ—¶é—´æˆ³è½¬æ—¥æœŸï¼š" + date);
 
 		String sdate = sdf.format(timesTamp);
 		try {
 			Date date2 = sdf.parse(sdate);
 			Calendar calendar = Calendar.getInstance();
 			calendar.setTime(date2);
-			System.out.println(""+calendar.get(Calendar.DAY_OF_MONTH));// ½ñÌìµÄÈÕÆÚ
+			System.out.println(""+calendar.get(Calendar.DAY_OF_MONTH));// ä»Šå¤©çš„æ—¥æœŸ
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-	
+
 
 	}
 
 	/**
-	 * ÈÕÆÚ×ªÊ±¼ä´Á
+	 * æ—¥æœŸè½¬æ—¶é—´æˆ³
 	 */
 	public static void dateConvertToTimeStamp() {
 
-		System.out.println("ÈÕÆÚ×ªÊ±¼ä´Á£º" + new Date().getTime());
+		System.out.println("æ—¥æœŸè½¬æ—¶é—´æˆ³ï¼š" + new Date().getTime());
 
 	}
 
 	/**
-	 * Ê±¼ä´Á×ªÈÕÆÚ
+	 * æ—¶é—´æˆ³è½¬æ—¥æœŸ
 	 */
 	public static void timestampConvertDate() {
-						 //1551082429172 599
+		//1551082429172 599
 		long timesTamp = 1551082429172L;
 		Timestamp t = new Timestamp(timesTamp);
-		System.out.println("timestamp×ªDate:" + new Date(t.getTime()));
+		System.out.println("timestampè½¬Date:" + new Date(t.getTime()));
 
 	}
-	
+
 	/**
-	 * »ñÈ¡1·ÖÖÓºóµÄÊ±¼ä
+	 * è·å–1åˆ†é’Ÿåçš„æ—¶é—´
 	 */
 	public static void getAfterOneMin() {
 		Calendar nowTime = Calendar.getInstance();

@@ -18,16 +18,16 @@ public class BigDecimalTest {
 		BigDecimal b1 = new BigDecimal(100);
 		BigDecimal b2 = new BigDecimal(200);
 		if (b1.compareTo(b2) == 0) {
-			System.out.println("b1等于b2");
+			System.out.println("b1绛変簬b2");
 		}
 		if (b1.compareTo(b2) == 1) {
-			System.out.println("b1大于b2");
+			System.out.println("b1澶т簬b2");
 		}
 		if (b1.compareTo(b2) == -1) {
-			System.out.println("b1小于b2");
+			System.out.println("b1灏忎簬b2");
 		}
 		if (b1.compareTo(b2) <= 0) {
-			System.out.println("b1小于或等于b2");
+			System.out.println("b1灏忎簬鎴栫瓑浜巄2");
 		}
 
 	}

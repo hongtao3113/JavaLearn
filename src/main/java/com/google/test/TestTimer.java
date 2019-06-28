@@ -14,9 +14,6 @@ public class TestTimer {
         timer1();
     }
 
-    /**
-     * 10s鍚庢墽琛岃鏂规�?
-     */
     public static void timer1() {
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
@@ -24,6 +21,6 @@ public class TestTimer {
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
                 System.out.println(sdf.format(new Date()));
             }
-        }, 10000);// 璁惧畾鎸囧畾鐨勬椂闂磘ime,姝ゅ涓�?000姣�?
+        }, 10000);//
     }
 }

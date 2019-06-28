@@ -1,4 +1,4 @@
-	
+
 package com.google.math;
 
 import java.math.BigDecimal;
@@ -18,7 +18,7 @@ public class DataUtil {
 
     public static BigDecimal bigDecimalUtil(Object obj) {
         String str = obj == null ? "" : obj.toString();
-        str = str.replaceAll(",", "").replaceAll("£¤", "");
+        str = str.replaceAll(",", "").replaceAll("ï¿¥", "");
         if (str != null && !str.equals("")) {
             BigDecimal b = new BigDecimal(str);
             return b;
@@ -180,15 +180,15 @@ public class DataUtil {
 
         return destDate;
     }
-    
+
     /**
-     *	 ´Ë·½·¨²»¿ÉÓÃ
+     *	 æ­¤æ–¹æ³•ä¸å¯ç”¨
      * @param obj
      * @return
      * @throws ParseException
      */
     @SuppressWarnings("deprecation")
-	public static Date dateUtil(Object obj) throws ParseException {
+    public static Date dateUtil(Object obj) throws ParseException {
         String source = String.valueOf(obj == null ? "" : obj);
         Date destDate = null;
         if (source != null && !source.equals("")) {
@@ -303,7 +303,7 @@ public class DataUtil {
         try {
             String str = "Fri Dec 10 2015 00:00:00 GMT+0800";
             System.out.println(dateUtil(str));
-            //2026-03-21,new Date(String s),Ö»ÄÜ×ª»»Ö¸¶¨¸ñÊ½µÄ×Ö·û´®
+            //2026-03-21,new Date(String s),åªèƒ½è½¬æ¢æŒ‡å®šæ ¼å¼çš„å­—ç¬¦ä¸²
             System.out.println(dateUtil("2026-03-21"));
         } catch (Exception var2) {
             var2.printStackTrace();

@@ -1,7 +1,7 @@
 package com.google.algorithm.coding;
 
 /**
- * N¸öÊýÏà¼Ó 1 2 3 4 5 n¡­¡­
+ *  Nä¸ªæ•°ç›¸åŠ  1 2 3 4 5 nâ€¦â€¦
  * 
  * @author wk
  *
@@ -10,7 +10,7 @@ public class NumberSum {
 
 	public static void main(String[] args) {
 		int length = 2;
-		test1(length);// Ê±¼ä¸´ÔÓ¶ÈO(n)
+		test1(length);// Ê±ï¿½ä¸´ï¿½Ó¶ï¿½O(n)
 		test2(length);// O(1)
 		test3(length);
 		test4(length);

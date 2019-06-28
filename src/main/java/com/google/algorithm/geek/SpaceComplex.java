@@ -1,8 +1,8 @@
 package com.google.algorithm.geek;
 
 /**
- * �ռ临�Ӷȷ���
- * 
+ * 空间复杂度分析
+ *
  * @author wk
  *
  */

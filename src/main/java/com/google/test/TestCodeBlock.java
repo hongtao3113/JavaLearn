@@ -1,9 +1,9 @@
 package com.google.test;
 
 /**
- * 
- * ´úÂë¿é
- * 
+ *
+ * ä»£ç å—
+ *
  * @author wk
  *
  */
@@ -15,7 +15,7 @@ public class TestCodeBlock {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("x=" + x);// Êä³ö5
+		System.out.println("x=" + x);// è¾“å‡º5
 	}
 
 	static {

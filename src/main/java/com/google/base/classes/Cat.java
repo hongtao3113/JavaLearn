@@ -1,17 +1,17 @@
 package com.google.base.classes;
 
 public class Cat extends Animals{
-	
-	
-	
+
+
+
 	public Cat() {
-		
+
 	}
-	
+
 	public void run() {
-		System.out.println("ÎÒÊÇÃ¨£¬ÎÒ»áÅÜ");
+		System.out.println("æˆ‘æ˜¯çŒ«ï¼Œæˆ‘ä¼šè·‘");
 	}
-	
+
 	public static void main(String[] args) {
 		Animals animals = new Cat();
 		animals.setAnimalName("cat");

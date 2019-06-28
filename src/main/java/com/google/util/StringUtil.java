@@ -4,8 +4,8 @@ import java.security.SecureRandom;
 import java.util.Random;
 
 /**
- * String³£ÓÃ·½·¨
- * 
+ * Stringå¸¸ç”¨æ–¹æ³•
+ *
  * @author wk
  *
  */
@@ -22,7 +22,7 @@ public class StringUtil {
 
 		final String SYMBOLS = "0123456789";
 		Random RANDOM = new SecureRandom();
-		// Èç¹ûĞèÒª4Î»£¬ÄÇ new char[4] ¼´¿É£¬ÆäËûÎ»ÊıÍ¬Àí¿ÉµÃ
+		// å¦‚æœéœ€è¦4ä½ï¼Œé‚£ new char[4] å³å¯ï¼Œå…¶ä»–ä½æ•°åŒç†å¯å¾—
 		char[] nonceChars = new char[4];
 
 		for (int index = 0; index < nonceChars.length; ++index) {
@@ -32,7 +32,7 @@ public class StringUtil {
 		System.out.println(new String(nonceChars));
 
 	}
-	
+
 	public static void getString() {
 		String s="1234666666";
 		System.out.println(s.substring(s.length()-6));

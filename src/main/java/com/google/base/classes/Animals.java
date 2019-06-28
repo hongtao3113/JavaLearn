@@ -1,25 +1,25 @@
 package com.google.base.classes;
 
 public abstract class Animals {
-	
+
 	String animalName = "";
-	
+
 	public Animals() {
-		System.out.println("¸¸ÀàÎŞ²Î¹¹Ôì·½·¨");
+		System.out.println("çˆ¶ç±»æ— å‚æ„é€ æ–¹æ³•");
 	}
-	
-	
-	
+
+
+
 	public Animals(String animalName) {
 		super();
 		this.animalName = animalName;
-		System.out.println("¸¸ÀàÓĞ²Î¹¹Ôì·½·¨");
+		System.out.println("çˆ¶ç±»æœ‰å‚æ„é€ æ–¹æ³•");
 	}
 
 
 
 	public static void main(String[] args) {
-		
+
 	}
 
 	public String getAnimalName() {
@@ -29,8 +29,8 @@ public abstract class Animals {
 	public void setAnimalName(String animalName) {
 		this.animalName = animalName;
 	}
-	
+
 	public void walk() {
-		System.out.println("¶¯Îï¶¼»á×ß");
+		System.out.println("åŠ¨ç‰©éƒ½ä¼šèµ°");
 	}
 }

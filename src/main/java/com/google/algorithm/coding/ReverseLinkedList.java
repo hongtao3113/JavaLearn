@@ -1,7 +1,7 @@
 package com.google.algorithm.coding;
 
 /**
- * ·´×ªÁ´±í
+ * åè½¬é“¾è¡¨
  * @author wk
  * in 1 2 3 4 5
  * out 5 4 3 2 1 

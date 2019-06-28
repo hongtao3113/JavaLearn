@@ -1,12 +1,12 @@
 package com.google.base.interfaces;
 
 /**
- * ½Ó¿Ú
+ * æ¥å£
  * @author wk
  *
  */
 public interface Animals {
-	
+
 	String name = "";
 
 }

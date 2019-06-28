@@ -1,8 +1,8 @@
 package com.google.base.dataType;
 
 /**
- * IntegerÀà
- * 
+ * Integerç±»
+ *
  * @author wk
  *
  */
@@ -10,7 +10,7 @@ public class IntegerTest {
 
 	/**
 	 * IntegerCache
-	 * 
+	 *
 	 * @param args
 	 */
 	public static void main(String[] args) {

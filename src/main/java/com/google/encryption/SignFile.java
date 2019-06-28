@@ -1,15 +1,15 @@
 package com.google.encryption;
 
 /**
- * ¶ÔÎÄ¼þ½øÐÐ¼ÓÇ©
- * 
+ * å¯¹æ–‡ä»¶è¿›è¡ŒåŠ ç­¾
+ *
  * @author wk
  *
  */
 public class SignFile {
 
 	public static void main(String[] args) {
-		
+
 	}
 
 }

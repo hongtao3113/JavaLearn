@@ -6,19 +6,19 @@ public class ModifyFileName {
 
 	public static void main(String[] args) {
 
-		String path = "F:\\BaiduNetdiskDownload\\33-Ëã·¨Í¨¹Ø40½²\\41-54";
+		String path = "F:\\BaiduNetdiskDownload\\33-ç®—æ³•é€šå…³40è®²\\41-54";
 		File fileList = new File(path);
 		File[] files = fileList.listFiles();
 		if (fileList.exists() && fileList.isDirectory()) {
 			for(File file:files) {
-				
+
 				String fileName = file.getName();
 				File oldFile = new File(path+File.separatorChar+fileName);
-				System.out.println("oldName£º"+fileName);
+				System.out.println("oldNameï¼š"+fileName);
 				if(fileName.contains("XXX")) {
 					fileName = fileName.replace("XXX", "");
 				}
-				System.out.println("newName£º"+fileName);
+				System.out.println("newNameï¼š"+fileName);
 				File newFile = new File(path+File.separatorChar+fileName);
 				oldFile.renameTo(newFile);
 			}

@@ -1,16 +1,16 @@
 package com.google.data_structure;
 
 /**
- * »ùÓÚÊı×éµÄÕ»ÊµÏÖ-Ë³ĞòÕ»£¬ Ë¼¿¼£ºÉæ¼°Ò»¸ö¶¯Ì¬À©ÈİµÄË³ĞòÕ»
- * 
+ * åŸºäºæ•°ç»„çš„æ ˆå®ç°-é¡ºåºæ ˆï¼Œ æ€è€ƒï¼šæ¶‰åŠä¸€ä¸ªåŠ¨æ€æ‰©å®¹çš„é¡ºåºæ ˆ
+ *
  * @author wk
  *
  */
 public class ArrayStack {
 
-	private String[] array;// ¶¨ÒåÒ»¸ö×Ö·û´®Êı×é
-	private int count;// ¶¨ÒåÕ»ÖĞµÄÊı¾İ¸öÊı
-	private int size;// Õ»µÄ´óĞ¡
+	private String[] array;// å®šä¹‰ä¸€ä¸ªå­—ç¬¦ä¸²æ•°ç»„
+	private int count;// å®šä¹‰æ ˆä¸­çš„æ•°æ®ä¸ªæ•°
+	private int size;// æ ˆçš„å¤§å°
 
 	private ArrayStack() {
 
@@ -23,22 +23,22 @@ public class ArrayStack {
 	}
 
 	/**
-	 * ÈëÕ»
-	 * 
+	 * å…¥æ ˆ
+	 *
 	 * @param item
 	 * @return
 	 */
 	public void push(String item) {
-		// Õ»ÒÑÂú£¬ÈëÕ»Ê§°Ü
+		// æ ˆå·²æ»¡ï¼Œå…¥æ ˆå¤±è´¥
 		if (count == size) {
-			throw new RuntimeException("Õ»ÒÑÂú");
+			throw new RuntimeException("æ ˆå·²æ»¡");
 		}
 		array[count] = item;
 		++count;
 	}
 
 	public void pushD(String item) {
-		// Õ»ÒÑÂú£¬ÈëÕ»Ê§°Ü
+		// æ ˆå·²æ»¡ï¼Œå…¥æ ˆå¤±è´¥
 		if (count == size) {
 			size = size * 2;
 			String s[] = new String[size];
@@ -51,10 +51,10 @@ public class ArrayStack {
 	}
 
 	public String pop() {
-		// Õ»Îª¿Õ£¬ÔòÖ±½Ó·µ»Ønull
+		// æ ˆä¸ºç©ºï¼Œåˆ™ç›´æ¥è¿”å›null
 		if (count == 0)
 			return null;
-		// ·µ»ØÏÂ±êÎªcount-1µÄÊı×éÔªËØ£¬²¢ÇÒÕ»ÖĞÔªËØ¸öÊıcount¼õÒ»
+		// è¿”å›ä¸‹æ ‡ä¸ºcount-1çš„æ•°ç»„å…ƒç´ ï¼Œå¹¶ä¸”æ ˆä¸­å…ƒç´ ä¸ªæ•°countå‡ä¸€
 		String tmp = array[count - 1];
 		array[count - 1] = null;
 		--count;

@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ÇóÒ»¸öÊı×éÖĞ£¬Á½¸öÊıµÄºÍÎªx£¬È¡ÕâÁ½¸öÊıµÄË÷Òı
- * 
+ * æ±‚ä¸€ä¸ªæ•°ç»„ä¸­ï¼Œä¸¤ä¸ªæ•°çš„å’Œä¸ºxï¼Œå–è¿™ä¸¤ä¸ªæ•°çš„ç´¢å¼•
+ *
  * @author wk
  *
  */
@@ -32,7 +32,7 @@ public class TwoSum {
 	public static int[] test2(int[] nums, int target) {
 		Map<Integer, Integer> map = new HashMap<>();
 		for (int i = 0; i < nums.length; i++) {
-			map.put(nums[i], i);// keyÈ¡Öµ£¬valueÈ¡Ë÷Òı
+			map.put(nums[i], i);// keyÈ¡Öµï¿½ï¿½valueÈ¡ï¿½ï¿½ï¿½ï¿½
 		}
 		for (int i = 0; i < nums.length; i++) {
 			int x = target - nums[i];
