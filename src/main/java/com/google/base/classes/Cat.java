@@ -8,7 +8,8 @@ public class Cat extends Animals{
 
 	}
 
-	public void run() {
+	@Override
+	public void walk() {
 		System.out.println("我是猫，我会跑");
 	}
 

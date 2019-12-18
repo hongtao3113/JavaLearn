@@ -9,7 +9,6 @@ public abstract class Animals {
 	}
 
 
-
 	public Animals(String animalName) {
 		super();
 		this.animalName = animalName;

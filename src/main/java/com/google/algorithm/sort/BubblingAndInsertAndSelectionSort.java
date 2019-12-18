@@ -1,5 +1,7 @@
 package com.google.algorithm.sort;
 
+import com.google.util.MathUtil;
+
 import java.util.Arrays;
 
 /**
@@ -11,27 +13,13 @@ import java.util.Arrays;
 public class BubblingAndInsertAndSelectionSort {
 
     public static void main(String[] args) {
-        int arr[] = productArray(10);
+        int arr[] = MathUtil.productArray(10);
         System.out.println("原始数组：".concat(Arrays.toString(arr)));
         bubblingSort(arr);
+        selectionSort(arr);
         int array[] = {3, 2, 1};
         insertionSort(array);
         insertSort(array);
-        selectionSort(arr);
-    }
-
-    /**
-     * 随机生成N个数
-     *
-     * @param size
-     * @return
-     */
-    private static int[] productArray(int size) {
-        int[] arr = new int[size];
-        for (int i = 0; i < size; i++) {
-            arr[i] = (int) (Math.random() * 100);//Math.random() (0,1]
-        }
-        return arr;
     }
 
     /**
@@ -118,8 +106,8 @@ public class BubblingAndInsertAndSelectionSort {
         for (int i = 0; i < arr.length; i++) {
             int minIndex = i;
             for (int j = i; j < arr.length; j++) {
-                if (arr[j] < arr[minIndex]) {
-                    minIndex = j;
+                if (arr[j] < arr[minIndex]) {//找到最小的数
+                    minIndex = j;//最小数的索引保存
                 }
             }
             int temp = arr[minIndex];

@@ -1,7 +1,10 @@
-package com.google.file;
+package com.google.ios;
 
 import java.io.File;
 
+/**
+ * 批量修改文件名称
+ */
 public class ModifyFileName {
 
 	public static void main(String[] args) {

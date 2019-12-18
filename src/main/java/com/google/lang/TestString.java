@@ -10,8 +10,9 @@ public class TestString {
                 String[] strings = s.split("T");
                 System.out.println(strings[0]);
                 System.out.println(strings[1].length());
-                System.out.println(strings[1].substring(0,8));
-                String d = new StringBuffer(strings[0]).append(" ").append(strings[1].substring(0,8)).toString();
+                String string2 = strings[1].substring(0,8);
+                System.out.println(string2);
+                String d = new StringBuffer(strings[0]).append(" ").append(string2).toString();
                 System.out.println(d);
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 try {
@@ -19,10 +20,9 @@ public class TestString {
                 } catch (ParseException e) {
                         e.printStackTrace();
                 }
-                System.out.println(String.valueOf(8907));
-                System.out.println(String.valueOf(75777));
                 String s3 = "911304045632003998";
                 System.out.println(s3.substring(8,s3.length()-1));
+
         }
 
 }
