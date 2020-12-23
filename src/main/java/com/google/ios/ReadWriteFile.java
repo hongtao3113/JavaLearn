@@ -7,6 +7,10 @@ import java.io.*;
 
 public class ReadWriteFile {
 
+    /**
+     * 读取文件内容
+     * @param filePath
+     */
     public static void readFileContent(String filePath) {
         FileInputStream fileInputStream = null;
         BufferedReader bufferedReader = null;
@@ -36,6 +40,11 @@ public class ReadWriteFile {
         }
     }
 
+    /**
+     * 文本写入文件
+     * @param filePath
+     * @param content
+     */
     public static void writeFile(String filePath, String content) {
         FileOutputStream fileOutputStream = null;
         BufferedWriter bufferedWriter = null;
